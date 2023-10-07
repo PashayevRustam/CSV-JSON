@@ -120,7 +120,7 @@ public class Main {
     }
 
     private static void writeString(String json, String outFileName) {
-        try (FileWriter fileWriter = new FileWriter(outFileName, true)) {
+        try (FileWriter fileWriter = new FileWriter(outFileName, false)) {
             fileWriter.write(json);
             fileWriter.flush();
         } catch (IOException e) {
